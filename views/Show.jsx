@@ -4,15 +4,13 @@ import React, {Component} from 'react';
 class Show extends Component{
     render(){
         console.log(this.props.pokemon);
-        const fruit = this.props.pokemon;
+        const pokemon = this.props.pokemon;
         return (
             <div>
                 <h1>Show Route</h1>
-                <p>The {pokemon.name}  is {pokemon.color}</p>
+                <p>The {pokemon.name}  is {pokemon.img}</p>
                 
                 <a href="/pokemon"></a>
-
-
 
             </div>
         )
@@ -21,5 +19,5 @@ class Show extends Component{
     }
 }
 
-export default Show
-//module.exports = Show;
+//export default Show
+module.exports = Show;
