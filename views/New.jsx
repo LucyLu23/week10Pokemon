@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 const myStyle2 ={
   color: "yellow",
   background: "lightgreen",
@@ -10,13 +11,13 @@ const myStyle2 ={
   render() {
     return (
       <div>
-        
-        <h1>New page </h1>
+        <h1>New Pokemon Form</h1>
         <form action="/pokemon" method="post">
-        Name: <input type="text" name='name' /> <br /> <br />
 
-        Image: <input type="url" name='link' /> <br /> <br />
-       
+          Name: <input type="text" name='name' /> <br /> <br />
+
+          Image: <input type="url" name='img' /> <br /> <br />
+          
         <input type="submit" name=''  value="createPokemon"  style={myStyle2}/>
 
 
